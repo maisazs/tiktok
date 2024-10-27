@@ -4,13 +4,20 @@ body {
     background: #262626;
 }
 
-ul {
+#divdiv {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
     display: flex;
 }
 
@@ -20,7 +27,7 @@ ul li {
     font-size: 5em;
     letter-spacing: 15px;
     color: #484848;
-    animation: animate 2s infinite linear;
+    animation: animate 1.8s infinite linear;
 }
 
 @keyframes animate {
@@ -34,46 +41,71 @@ ul li {
     }
     100% {
         color: #484848;
-        text-shadow: 0 0 7px #4400ff, 0 0 50px #cc00ff;
+        text-shadow: 0 0 7px #ffffff, 0 0 50px #a200ff;
     }
 }
 
 ul li:nth-child(1) {
-    animation-delay: .2s;
+    animation-delay: .3s;
 }
 
 ul li:nth-child(2) {
-    animation-delay: .4s;
-}
-
-ul li:nth-child(3) {
     animation-delay: .6s;
 }
 
+ul li:nth-child(3) {
+    animation-delay: .9s;
+}
+
 ul li:nth-child(4) {
-    animation-delay: .8s;
-}
-
-ul li:nth-child(5) {
-    animation-delay: 1s;
-}
-
-ul li:nth-child(6) {
     animation-delay: 1.2s;
 }
 
-ul li:nth-child(7) {
-    animation-delay: 1.4s;
+ul li:nth-child(5) {
+    animation-delay: 1.5s;
 }
 
-ul li:nth-child(8) {
-    animation-delay: 1.6s;
-}
-
-ul li:nth-child(9) {
+ul li:nth-child(6) {
     animation-delay: 1.8s;
 }
 
-ul li:nth-child(10) {
-    animation-delay: 2s;
+p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: #575656;
+    background-color: #44354d;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 5px #44354d;
+    letter-spacing: 4px;
+    transition: .5s;
 }
+
+p:first-child:hover {
+    box-shadow: 0px 0px 25px 8px #44354d;
+    color: #616161;
+}
+
+#divp {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+ p:last-child {
+    background-color: transparent;
+    box-shadow: none;
+    color: #44354d;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 6px;
+    margin-top: -7px;
+ }
+
+ img {
+    width: 30px;
+    margin-top: 7px;
+    opacity: .4;
+
+ }
